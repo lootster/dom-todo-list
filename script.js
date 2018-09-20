@@ -23,10 +23,19 @@ toDo.addEventListener("click", function(item) {
 let input = document.querySelector("input");
 let button = document.querySelector("button")
 
-button.addEventListener("click", function() {
+function addTask() {
 	let li = document.createElement("li");
 	li.textContent = input.value;
 	toDo.appendChild(li);
 	input.value = "";
+}
+
+button.addEventListener("click", function() {
+	addTask();
 })
 
+input.addEventListener("keypress", function(key) {
+	if (key.charCode === 13) {
+		addTask();
+	}
+})
