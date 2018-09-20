@@ -1,13 +1,35 @@
 body {
-	border: 1px dotted tomato;
+	border: 2px solid black;
 	box-sizing: border-box;
-	border-width: 0 1px;
+	border-radius: 9%;
 	font-family: sans-serif;
 	font-size: 2rem;
-	margin: 0 auto;
+	margin: 20px auto;
 	max-width: 700px;
-	min-height: 100vh;
+	min-height: 80vh;
 	padding: 4rem;
+	background: beige;
+}
+
+input {
+	padding: 15px;
+	width: 400px;
+	font-size: 1.3rem;
+}
+
+button {
+	padding: 15px;
+	font-size: 1.3rem;
+	color: black;
+	background: red;
+	border-radius: 7%;
+}
+
+h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3rem;
+	margin: 40px 0;
+	text-align: center;
 }
 
 ul {
